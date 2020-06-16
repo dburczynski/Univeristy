@@ -1,0 +1,71 @@
+div.bg-colororange {
+    background-color: orange;
+    grid-area: "A";
+}
+
+div.bg-colorgreen {
+    background-color: green;
+    grid-area: "B";
+}
+
+div.bg-colorblue{
+    background-color: blue;
+    grid-area: "C";
+}
+
+div.bg-colorgrey {
+    background-color: grey;
+    grid-area: "D";
+}
+div.container {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "A"
+    "A"
+    "B"
+    "C"
+    "C"
+    "C"
+    "D"
+}
+// @media (max-width: 320px) {
+//     div.container {
+//         display: grid;
+//         grid-template:
+//          [row1-start] "bg-colororange" 50px [row1-end]
+//          [row2-start] "bg-colororange" 50px [row2-end]
+//          [row3-start] "bg-colorgreen" 50px [row3-end]
+//          [row4-start] "bg-colorblue" 50px [row4-end]
+//          [row5-start] "bg-colorblue" 50px [row5-end]
+//          [row6-start] "bg-colorblue" 50px [row6-end]
+//          [row7-start] "bg-colorgrey" 50px [row7-end]
+//          / auto 50px auto;
+
+
+//        }
+    
+   
+//   }
+//   @media (max-width: 768px) {
+//     div.container {
+//         display: grid;
+//         grid-template:
+//          [row1-start] "bg-colororange" 50px [row1-end]
+//          [row2-start] "bg-colororange" 50px [row2-end]
+//          [row3-start] "bg-colorgreen" 50px [row3-end]
+//          [row4-start] "bg-colorblue" 50px [row4-end]
+//          [row5-start] "bg-colorblue" 50px [row5-end]
+//          [row6-start] "bg-colorblue" 50px [row6-end]
+//          [row7-start] "bg-colorgrey" 50px [row7-end]
+//          / auto 50px auto;
+
+
+//        }
+
+// }
+// @media (max-width: 1024px) {
+    
+
+ // }

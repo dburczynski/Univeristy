@@ -1,0 +1,11 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name = "slowo" >
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value = "[sS].{2,3}"/>
+                <xsd:pattern value = "(([b-z]|[BZ])*[aA]){3,}([b-z]|[BZ])*"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+</xsd:schema>

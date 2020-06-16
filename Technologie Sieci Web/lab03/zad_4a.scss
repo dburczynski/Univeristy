@@ -1,0 +1,30 @@
+div.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "A B B D"
+    "A C C D"
+   }
+
+div.A {
+    background-color: red;
+    grid-area: A;
+
+}
+
+
+div.B {
+    background-color: yellow;
+    grid-area: B;
+}
+
+div.C {
+    background-color: green;
+    grid-area: C;
+}
+
+div.D {
+    background-color: blue;
+    grid-area: D;
+}

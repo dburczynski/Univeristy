@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+div {
+  margin: 0 auto;
+  width: 25%;
+  height: 15%;
+}
+
+.A {
+  border: 1px solid red;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background: yellow;
+}
+
+.B {
+  border: 1px solid blue;
+  position: absolute;
+  left: 40%;
+  top: 35%;
+  background: white;
+}
+/*# sourceMappingURL=zad1.css.map */

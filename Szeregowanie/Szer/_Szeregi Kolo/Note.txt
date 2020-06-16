@@ -1,0 +1,10 @@
+p_i -> czas wykonywania zadania
+r_i -> moment przybycia zadania(default = 0)
+d_i -> termin zakończenia zadania(due date)
+w_i -> waga zadania(default = 1)
+
+C_i -> moment zakończenia 
+F_i = C_i - r_i -> czas przepływu przez system(ile czasu zad. było w systemie)
+L_i = C_i - d_i -> opóźnienie
+T_i = max{C_i - d_i, 0} -> spóźnienie 
+U_i = w(C_i > d_i) -> znacznik spóźnienia, czy zadanie się spóźniło(T/F)?

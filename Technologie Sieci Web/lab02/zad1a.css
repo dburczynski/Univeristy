@@ -1,0 +1,31 @@
+body {
+  height: 100vh;
+}
+
+.box {
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+}
+
+.box:nth-child(1) {
+  background: #4d4d4d;
+}
+
+.box:nth-child(2) {
+  background: #6e6e6e;
+}
+
+.box:nth-child(3) {
+  background: #a1a1a1;
+}
+
+#outer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=zad1a.css.map */

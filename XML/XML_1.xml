@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dane 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\derek\GitRepo\XML\Lab5\1.xsd">
+    <imie>Darek</imie>
+    <nazwisko>Burczynski</nazwisko>
+    <wiek>21</wiek>
+    <data_urodzenia>22.06.1997</data_urodzenia>
+    <pensja>0</pensja>
+</dane>

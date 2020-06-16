@@ -1,0 +1,40 @@
+$var: absolute;
+$pos1: 30%;
+$pos2: 50%;
+$top1: 30%;
+$top2: 40%;
+$left: 10%;
+$right: 10%;
+$back1: yellow;
+$back2: white;
+$bord1: red;
+$bord2: blue;
+$bord3: solid;
+
+body {
+    background-color:  $back2;
+}
+
+.A {
+    border-style: $bord3;
+    border-color: $bord1;
+    background-color: $back1;
+    position: $var;
+    height: $pos1;
+    width: $pos2;
+    top: $top1;
+    left: $left;
+}
+
+.B {
+    border-style: $bord3;
+    border-color: $bord2;
+    background-color: $back2;
+    position: $var;
+    height: $pos1;
+    width: $pos2;
+    top: $top2;
+    right: $right;
+    
+}
+

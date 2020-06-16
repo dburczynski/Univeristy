@@ -1,0 +1,26 @@
+#all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  #menu {
+    background: #bfbfbf;
+    padding: 2vmin;
+    text-align: center;
+  }
+  
+  #menu p {
+    background: white;
+    margin: 1vmin;
+    padding: 1vmin;
+    width: 75%;
+  }
+  
+  #main {
+    background: #dbdbdb;
+    padding: 2vmin;
+  }
+  body{
+    background: #dbdbdb;
+  }

@@ -1,0 +1,45 @@
+$border: 1px solid black;
+$color: #f8fabe;
+div.container {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: 200px,200px,200px,200px,200px;
+    grid-template-rows: auto;
+    
+    grid-template-areas: 
+    "header header header header header"
+    "nav section section section aside"
+    "footer footer footer footer footer";
+   }
+
+header {
+    grid-area: header;
+    border: $border;
+    background: $color;
+}
+
+nav {
+    grid-area: nav;
+    border: $border;
+    background: $color;
+}
+
+section {
+    grid-area: section;
+    border: $border;
+    background: $color;
+}
+
+aside {
+    grid-area: aside;
+    border: $border;
+    background: $color;
+}
+
+footer {
+    grid-area: footer;
+    border: $border;
+    background: $color;
+}

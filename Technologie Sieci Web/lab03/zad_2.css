@@ -1,0 +1,63 @@
+div.container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 20px;
+  -ms-grid-columns: (200px)[5];
+      grid-template-columns: repeat(5, 200px);
+  -ms-grid-rows: (50px)[9];
+      grid-template-rows: repeat(9, 50px);
+  grid-auto-flow: row;
+  position: absolute;
+}
+
+div.item {
+  font-size: 150;
+  padding: 15px;
+  background-color: #b5915f;
+  text-align: center;
+  color: #000;
+  border: 1px solid black;
+}
+
+div.item9 {
+  background: red;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+div.item11 {
+  background: #d8befa;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+div.item16 {
+  background: turquoise;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+div.item29 {
+  background: brown;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
+  grid-row-end: 8;
+}
+/*# sourceMappingURL=zad_2.css.map */

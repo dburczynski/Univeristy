@@ -1,0 +1,24 @@
+const zad5 = () => {
+    var container = document.getElementsByClassName("container")[0];
+    var radioM = document.createElement("input");
+    radioM.setAttribute("type", "radio");
+    radioM.setAttribute("name", "payment");
+    radioM.setAttribute("value", "M");
+    radioM.checked = true;
+    var radioY = document.createElement("input");
+    radioY.setAttribute("type", "radio");
+    radioY.setAttribute("name", "payment");
+    radioY.setAttribute("value", "Y");
+    var labelM = document.createElement("label");
+    labelM.setAttribute("for", "M");
+    labelM.appendChild(document.createTextNode("Mies."));
+    var labelY = document.createElement("label");
+    labelY.setAttribute("for", "Y");
+    labelY.appendChild(document.createTextNode("Rocz."));
+    radioM.addEventListener("change", toggle);
+    radioY.addEventListener("change", toggle);
+    container.appendChild(radioM);
+    container.appendChild(labelM);
+    container.appendChild(radioY);
+    container.appendChild(labelY);
+  };

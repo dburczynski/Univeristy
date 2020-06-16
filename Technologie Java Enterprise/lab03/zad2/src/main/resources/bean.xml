@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Tomasz1" class="com.example.lab3_2.domain.Ojciec">
+        <constructor-arg name="name" value="Tomasz"/>
+        <constructor-arg name="lastName" value="Kowalski"/>
+        <constructor-arg name="yob" value="1967"/>
+        <property name="dzieci">
+            <array>
+                <ref bean="Jacek1"/>
+                <ref bean="Danuta1"/>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="Jadwiga1" class="com.example.lab3_2.domain.Matka">
+        <constructor-arg name="name" value="Jadwiga"/>
+        <constructor-arg name="lastName" value="Kowalski"/>
+        <constructor-arg name="yob" value="1969"/>
+        <property name="dzieci">
+            <array>
+                <ref bean="Jacek1"/>
+                <ref bean="Danuta1"/>
+            </array>
+        </property>
+    </bean>
+    <bean id="Jacek1" class="com.example.lab3_2.domain.Dziecko">
+        <constructor-arg name="name" value="Jacek"/>
+        <constructor-arg name="lastName" value="Kowalski"/>
+        <constructor-arg name="yob" value="1997"/>
+        <property name="ojciec" ref="Tomasz1"/>
+        <property name="matka" ref="Jadwiga1"/>
+    </bean>
+
+    <bean id="Danuta1" class="com.example.lab3_2.domain.Dziecko">
+        <constructor-arg name="name" value="Danuta"/>
+        <constructor-arg name="lastName" value="Kowalski"/>
+        <constructor-arg name="yob" value="2006"/>
+        <property name="ojciec" ref="Tomasz1"/>
+        <property name="matka" ref="Jadwiga1"/>
+    </bean>
+    <bean id="1" class="com.example.lab3_2.domain.Rodzina">
+        <constructor-arg name="rodzina">
+            <array>
+                <ref bean="Tomasz1"/>
+                <ref bean="Jadwiga1"/>
+                <ref bean="Jacek1"/>
+                <ref bean="Danuta1"/>
+            </array>
+        </constructor-arg>
+    </bean>
+</beans>

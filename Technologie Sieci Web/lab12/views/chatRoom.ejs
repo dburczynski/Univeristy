@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/chat.js"></script>
+</head>
+<body>
+    <div class="lobby-room" id="lobby">
+        <input type="text" id="room-name-input" placeholder="Room Name">
+        <button id="btn-create-room">Create</button>
+        <br>
+        <% rooms.forEach((room) => {%>
+            <div class="room-div">
+                <%= room.name %>
+                <button id=<%= room.name %> onclick="joinRoom(this.id)">Join</button>
+                <br>
+            </div>
+        <% }); %>
+        <br>
+    </div>
+    <div class="chat-room">
+        <div class="chat-box" id="chat-box">
+
+        </div>
+        <div class="chat-input">
+            <input class="chat-input-field" type="text" id="chat-input-field">
+            <button class="chat-input-send" id="chat-input-send" onclick="send()">Send</button>
+        </div>
+        
+    </div>
+</body>
+</html>

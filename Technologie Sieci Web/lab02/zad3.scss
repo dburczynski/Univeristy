@@ -1,0 +1,39 @@
+#all {
+    display: flex;
+  }
+  #menu {
+    background: #bfbfbf;
+    padding: 2vmin;
+    text-align: center;
+  }
+  #menu p {
+    background: white;
+    margin: 1vmin;
+    padding: 1vmin;
+    width: 75%;
+  }
+  #main {
+    background: #dbdbdb;
+    padding: 2vmin;
+  }
+  body{
+    background: #dbdbdb;
+  }
+  
+  @media (max-width: 960px) {
+    #menu {
+      padding: 0;
+    }
+    #menu p {
+        padding: 0;
+    }
+  }
+  @media (max-width: 720px) {
+    #all {
+        flex-direction: column;
+    }
+    #menu {
+      display: flex;
+    }
+
+  }

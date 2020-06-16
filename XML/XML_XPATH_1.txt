@@ -1,0 +1,15 @@
+/lista/osoba[@plec = "k"]
+/lista/osoba[wiek >= 20 and wiek <= 40]
+/lista/osoba[position() = 3]
+/lista/osoba/adres/miejsce[text()='Gdynia']
+/lista/osoba[not(opis)]
+/lista/osoba/imie[not(text() = "Abira") and not(text() = "Borys")]
+/lista/osoba[position() = last()- 2]/[name() = 'imie' or name() = 'nazwisko']
+/lista/osoba[position() = last()]/[name() = 'imie' or name() = 'nazwisko']
+/lista/osoba[position() mod 2 = 1]
+sum(//osoba[@plec = "m"]/wiek/text())
+sum(//osoba[adres/miejsce/text()='Gdynia' or adres/miejsce/text()='Olsztyn' ]/@id)
+//osoba[position() >= 7]
+//osoba[wiek >= 40]
+//osoba[contains(adres/kod-pocztowy/text(),8)]/@id
+//osoba[nazwisko/text() = 'Bogata']/preceding-sibling::[1]/adres

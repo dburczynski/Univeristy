@@ -1,0 +1,30 @@
+div.bg-colororange {
+  background-color: orange;
+  grid-area: "A";
+}
+
+div.bg-colorgreen {
+  background-color: green;
+  grid-area: "B";
+}
+
+div.bg-colorblue {
+  background-color: blue;
+  grid-area: "C";
+}
+
+div.bg-colorgrey {
+  background-color: grey;
+  grid-area: "D";
+}
+
+div.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  -ms-grid-rows: 100px 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-template-areas: "A" "A" "B" "C" "C" "C" "D";
+}
+/*# sourceMappingURL=zad1.css.map */
